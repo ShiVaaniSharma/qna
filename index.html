@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* Centers horizontally */
+.qna{
+  max-width: 700px;
+  margin: 0 auto;
+}
+#headtext{
+    display: flex;
+    justify-content: center;
+}
+#qnamg{
+    height: 70px;
+    width: 70px;
+}
+/* Button default resets */
+button{
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+/* Styling the accordion buttons */
+.accordion{
+  width: 100%;
+  background-color: #002848;
+  color: #fff;
+  font-size: 20px;
+  padding: 18px 20px;
+  margin-bottom: 1px;
+  text-align: left;
+  /*  To push the plus sign to the right  */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* adding the "plus" sign (+) */ 
+.accordion::after{
+  content: '\02795';
+  font-size: 20px;
+  color: #fff;
+}
+.panel{
+  background-color: #49494a;
+  color: #fff;
+  margin-bottom: 4px;
+  overflow: hidden;
+  transition: max-height .33s cubic-bezier(.5,0,.1,1);
+}
+.panel > p {
+  font-size: 20px;
+  padding: 10px 20px;
+}
+.panel-closed{
+  max-height: 0;
+  overflow: hidden;
+}
+.panel-open{
+  max-height: 700px;
+}
+/* active class for accordion, adds the "cross sign (x)" */
+.accordion-active::after {
+  content: "\274C";
+}
+</style>
+<body>
+   
+<div class="qna">
+    <div id="headtext">
+        <img id="qnamg" src="qna.png" alt="">
+        <h1>this is Q&A</h1>
+    </div>
+    <button class="accordion">Question 1</button>
+    <div class="panel panel-closed">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel molestias dolor e
+        sse libero aliquam assumenda ab harum ad mollitia 
+        quasi! Error mollitia incidunt fuga omnis doloribus molestiae animi officiis iure?</p>
+    </div>
+    <button class="accordion">Question 2</button>
+    <div class="panel panel-closed">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel molestias dolor e
+        sse libero aliquam assumenda ab harum ad mollitia 
+        quasi! Error mollitia incidunt fuga omnis doloribus molestiae animi officiis </p>
+    </div>
+    <button class="accordion">Question 3</button>
+    <div class="panel panel-closed">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel molestias dolor e
+        sse libero aliquam assumenda ab harum ad mollitia 
+        quasi! Error mollitia incidunt fuga omnis doloribus molestiae animi officiis </p>
+    </div>
+    <button class="accordion">Question 4</button>
+    <div class="panel panel-closed">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel molestias dolor e
+        sse libero aliquam assumenda ab harum ad mollitia 
+        quasi! Error mollitia incidunt fuga omnis doloribus molestiae animi officiis </p>
+    </div>
+    <button class="accordion">Question 1</button>
+    <div class="panel panel-closed">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel molestias dolor e
+        sse libero aliquam assumenda ab harum ad mollitia 
+        quasi! Error mollitia incidunt fuga omnis doloribus molestiae animi officiis </p>
+    </div>
+    <button class="accordion">Question 2</button>
+    <div class="panel panel-closed">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel molestias dolor e
+        sse libero aliquam assumenda ab harum ad mollitia 
+        quasi! Error mollitia incidunt fuga omnis doloribus molestiae animi officiis </p>
+    </div>
+    <button class="accordion">Question 3</button>
+    <div class="panel panel-closed">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel molestias dolor e
+        sse libero aliquam assumenda ab harum ad mollitia 
+        quasi! Error mollitia incidunt fuga omnis doloribus molestiae animi officiis </p>
+    </div>
+    <button class="accordion">Question 4</button>
+    <div class="panel panel-closed">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel molestias dolor e
+        sse libero aliquam assumenda ab harum ad mollitia 
+        quasi! Error mollitia incidunt fuga omnis doloribus molestiae animi officiis </p>
+    </div>
+    <button class="accordion">Question 1</button>
+    <div class="panel panel-closed">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel molestias dolor e
+        sse libero aliquam assumenda ab harum ad mollitia 
+        quasi! Error mollitia incidunt fuga omnis doloribus molestiae animi officiis </p>
+    </div>
+    <button class="accordion">Question 2</button>
+    <div class="panel panel-closed">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel molestias dolor e
+        sse libero aliquam assumenda ab harum ad mollitia 
+        quasi! Error mollitia incidunt fuga omnis doloribus molestiae animi officiis </p>
+    </div>
+    <button class="accordion">Question 3</button>
+    <div class="panel panel-closed">
+      <p>Answer of Question 3</p>
+    </div>
+    <button class="accordion">Question 4</button>
+    <div class="panel panel-closed">
+      <p>Answer of Question 4</p>
+    </div>
+    <button class="accordion">Question 1</button>
+    <div class="panel panel-closed">
+      <p>Answer of Question 1</p>
+    </div>
+    <button class="accordion">Question 2</button>
+    <div class="panel panel-closed">
+      <p>Answer of Question 2</p>
+    </div>
+    <button class="accordion">Question 3</button>
+    <div class="panel panel-closed">
+      <p>Answer of Question 3</p>
+    </div>
+    <button class="accordion">Question 4</button>
+    <div class="panel panel-closed">
+      <p>Answer of Question 4</p>
+    </div>
+    <button class="accordion">Question 1</button>
+    <div class="panel panel-closed">
+      <p>Answer of Question 1</p>
+    </div>
+    <button class="accordion">Question 2</button>
+    <div class="panel panel-closed">
+      <p>Answer of Question 2</p>
+    </div>
+    <button class="accordion">Question 3</button>
+    <div class="panel panel-closed">
+      <p>Answer of Question 3</p>
+    </div>
+    <button class="accordion">Question 4</button>
+    <div class="panel panel-closed">
+      <p>Answer of Question 4</p>
+    </div>
+  </div> 
+  <script>
+    let accordion = document.getElementsByClassName("accordion");
+const totalAccordions = accordion.length;
+
+for (let i = 0; i < totalAccordions; i++) {
+  accordion[i].addEventListener("click", (e) => {
+    let panel = e.target.nextElementSibling;
+   
+    if (panel.classList[1] === "panel-closed") {
+      e.target.classList.toggle("accordion-active");
+      panel.classList.toggle("panel-open");
+      closeAllExcept(panel);
+    }
+  });
+} 
+
+const closeAllExcept = (pan) => {
+  for (let i = 0; i < totalAccordions; i++) {
+    let panelToClose = accordion[i].nextElementSibling;
+    if(panelToClose !== pan){
+       accordion[i].classList.remove("accordion-active");
+       panelToClose.classList.remove("panel-open");
+    }
+  }
+}
+  </script>
+</body>
+</html>
+
+
+
+
